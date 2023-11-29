@@ -1,0 +1,43 @@
+﻿<Window x:Class="Proyecto05.AdministrarTemas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto05"
+        mc:Ignorable="d"
+        Title="AdministrarTemas" Height="600" Width="1000">
+    <Grid>
+        <StackPanel Margin="40,15,40,483" Orientation="Horizontal">
+
+            <TextBlock x:Name="TBKNombre" Width="600" Text="Listado de Temas" FontSize="18" VerticalAlignment="Center" TextAlignment="Center" />
+            <Button x:Name="BTNAgregar" Height="52" Width="215" Content="Agregar Tema" FontSize="20" Click="BTNAgregar_Click"/>
+
+        </StackPanel>
+        <Grid Margin="10,101,10,10">
+            <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" HorizontalAlignment="Left" VerticalAlignment="Center" Width="970" Height="453" CanUserAddRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Nombre" Binding="{Binding nombretema}" Width="200"/>
+                    <DataGridTextColumn Header="Descripcion" Binding="{Binding descripcion}" Width="500"/>
+                    <DataGridTextColumn Header="Duracion" Binding="{Binding tiempo}" Width="100"/>
+                    <DataGridTemplateColumn Header="Acciones" Width="150">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Content="Modificar" Width="75" Click="Button_Click_Modificar"/>
+                                    <Button Content="Eliminar" Width="75" Click="Button_Click_Eliminar" Tag="{Binding}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow">
+                        <Setter Property="Background" Value="LightBlue"/>
+                    </Style>
+                </DataGrid.RowStyle>
+            </DataGrid>
+        </Grid>
+
+
+    </Grid>
+</Window>

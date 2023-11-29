@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove=".png" />
+    <None Remove="AgregarAlumno.png" />
+    <None Remove="AgregarTema.png" />
+    <None Remove="candado.jpg" />
+    <None Remove="fondo.jpg" />
+    <None Remove="logo.jpg" />
+    <None Remove="mail.jpg" />
+    <None Remove="user.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="2.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="AgregarAlumno.png" />
+    <Resource Include="AgregarTema.png" />
+    <Resource Include="candado.jpg" />
+    <Resource Include="fondo.jpg" />
+    <Resource Include="logo.jpg" />
+    <Resource Include="mail.jpg" />
+    <Resource Include="user.jpg" />
+  </ItemGroup>
+
+</Project>
