@@ -69,6 +69,7 @@ namespace Proyecto05
                         BD.Insert(Consulta);
                         MessageBox.Show("Se ha Registrado el usuario nuevo, Vuelva a Iniciar Sesion");
                         vaciar();
+                        BD.Close();
                     }
                     else{
                         MessageBox.Show("No coinciden las contraseñas");

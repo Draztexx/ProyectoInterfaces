@@ -57,7 +57,7 @@ namespace Proyecto05
                 {
                     MessageBox.Show("El correo y la contraseña no coinciden, si no esta registrado hagalo", "Información");
                 }
-                BD.Close();
+                
             }
             else
             {

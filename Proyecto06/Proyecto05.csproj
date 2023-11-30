@@ -16,10 +16,7 @@
     <None Remove="logo.jpg" />
     <None Remove="mail.jpg" />
     <None Remove="user.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Imagenes\" />
+    <None Remove="Usuario.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,6 +31,7 @@
     <Resource Include="logo.jpg" />
     <Resource Include="mail.jpg" />
     <Resource Include="user.jpg" />
+    <Resource Include="Usuario.png" />
   </ItemGroup>
 
 </Project>

@@ -58,3 +58,36 @@ E:\2DAM\Desarrollo de Interfaces\Proyectos\Proyecto06\obj\Debug\net6.0-windows\A
 E:\2DAM\Desarrollo de Interfaces\Proyectos\Proyecto06\obj\Debug\net6.0-windows\AdministrarTemas.baml
 E:\2DAM\Desarrollo de Interfaces\Proyectos\Proyecto06\obj\Debug\net6.0-windows\AgregarTema.g.cs
 E:\2DAM\Desarrollo de Interfaces\Proyectos\Proyecto06\obj\Debug\net6.0-windows\AgregarTema.baml
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\bin\Debug\net6.0-windows\Proyecto05.exe
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\bin\Debug\net6.0-windows\Proyecto05.deps.json
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\bin\Debug\net6.0-windows\Proyecto05.runtimeconfig.json
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\bin\Debug\net6.0-windows\Proyecto05.dll
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\bin\Debug\net6.0-windows\Proyecto05.pdb
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\bin\Debug\net6.0-windows\MySqlConnector.dll
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Proyecto05.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Administrar.baml
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Administrar.g.cs
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\AdministrarMenu.g.cs
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\AdministrarTemas.g.cs
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\AgregarTema.g.cs
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Registro.g.cs
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Proyecto05_MarkupCompile.cache
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Proyecto05_MarkupCompile.lref
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\AdministrarMenu.baml
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\AdministrarTemas.baml
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\AgregarTema.baml
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Registro.baml
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Proyecto05.g.resources
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Proyecto05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Proyecto05.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Proyecto05.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Proyecto05.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Proyecto05.csproj.CopyComplete
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Proyecto05.dll
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\refint\Proyecto05.dll
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Proyecto05.pdb
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Proyecto05.genruntimeconfig.cache
+C:\Users\Alumno\Desktop\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\ref\Proyecto05.dll

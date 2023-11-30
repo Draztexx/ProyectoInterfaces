@@ -23,81 +23,131 @@
             <Setter Property="FontSize" Value="18"/>
         </Style>
     </Window.Resources>
-    <Grid>
-        
-        <StackPanel Margin="80,40,80,40">
-            
-            <!--<TextBox>
-                <TextBox.Style>
-                    <Style TargetType="TextBox" xmlns:sys="clr-namespace:System;assembly=mscorlib">
-                        <Style.Resources>
-                            <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
-                                <VisualBrush.Visual>
-                                    <Label Content="Search" Foreground="LightGray" />
-                                </VisualBrush.Visual>
-                            </VisualBrush>
-                        </Style.Resources>
-                        <Style.Triggers>
-                            <Trigger Property="Text" Value="{x:Static sys:String.Empty}">
-                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
-                            </Trigger>
-                            <Trigger Property="Text" Value="{x:Null}">
-                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
-                            </Trigger>
-                            <Trigger Property="IsKeyboardFocused" Value="True">
-                                <Setter Property="Background" Value="White" />
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </TextBox.Style>
-            </TextBox>-->
-            
-                        <StackPanel Orientation="Horizontal" Height="50">
-                <TextBlock Text="Titulo del Tema" Width="200" Style="{StaticResource EstiloNorteTBK}" />
-                <TextBox x:Name="titulo" Width="530" Style="{StaticResource EstiloNorteTBX}"/>
+    <Grid Margin="0,0,0,-581">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,0,0,581">
+
+            <StackPanel Margin="80,40,80,36" >
+
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Titulo del Tema" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="titulo" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Descripcion del Tema" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="descripcion" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Documento del Tema" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="documento" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Duracion del Tema" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="duracion" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <Separator Height="50"/>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Pregunta 0" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="P0" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Correcta" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RC0" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Incorrecta01" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RI01" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Incorrecta 2" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RI02" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <Separator Height="25"/>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Pregunta 1" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="P1" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Correcta" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RC1" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Incorrecta 1" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RI11" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Incorrecta 2" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RI12" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <Separator Height="25"/>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Pregunta 2" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="P2" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Correcta" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RC2" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Incorrecta 1" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RI21" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Incorrecta 2" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RI22" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <Separator Height="25"/>
+
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Pregunta 3" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="P3" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Correcta" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RC3" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Incorrecta 1" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RI31" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Incorrecta 2" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RI32" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+
+                <Separator Height="25"/>
+
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Pregunta 4" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="P4" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Correcta" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RC4" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Incorrecta 1" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RI41" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Text="Respuesta Incorrecta 2" Width="200" Style="{StaticResource EstiloNorteTBK}" />
+                    <TextBox x:Name="RI42" Width="500" Style="{StaticResource EstiloNorteTBX}"/>
+                </StackPanel>
+                <Separator Height="25"/>
+                <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Center" >
+                    <Button x:Name="Agregar" Content="AGREGAR" Width="200" Click="Agregar_Click"/>
+                </StackPanel>
+
+
+
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Height="50">
-                <TextBlock Text="Descripcion del Tema" Width="200" Style="{StaticResource EstiloNorteTBK}" />
-                <TextBox x:Name="descripcion" Width="530" Style="{StaticResource EstiloNorteTBX}"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" Height="50">
-                <TextBlock Text="Documento del Tema" Width="200" Style="{StaticResource EstiloNorteTBK}" />
-                <TextBox x:Name="documento" Width="530" Style="{StaticResource EstiloNorteTBX}"/>
-            </StackPanel>
-                        
-            <StackPanel Orientation="Horizontal" Height="50">
-                <TextBlock Text="Duracion del Tema" Width="200" Style="{StaticResource EstiloNorteTBK}" />
-                <TextBox x:Name="duracion" Width="530" Style="{StaticResource EstiloNorteTBX}"/>
-            </StackPanel>
-            <Separator Height="50"/>
+        </ScrollViewer>
 
-
-        </StackPanel>
-       <ItemsControl ItemsSource="{Binding Preguntas}">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-
-                        <StackPanel Orientation="Horizontal" Height="50">
-                            <TextBlock Text="{Binding Pregunta}" Width="200" Style="{StaticResource EstiloNorteTBK}" />
-                            <TextBox  Width="530" Style="{StaticResource EstiloNorteTBX}" Text="{Binding PreguntaValor}"/>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" Height="50">
-                            <TextBlock Text="{Binding RCorrecta}" Width="200" Style="{StaticResource EstiloNorteTBK}" />
-                            <TextBox  Text="{Binding RaCorrectaValor}" Width="530" Style="{StaticResource EstiloNorteTBX}"/>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" Height="50">
-                            <TextBlock Text="{Binding RIncorrecta1}" Width="200" Style="{StaticResource EstiloNorteTBK}" />
-                            <TextBox Text="{Binding RIncorrecta1Valor}" Width="530" Style="{StaticResource EstiloNorteTBX}"/>
-                        </StackPanel>
-
-                        <StackPanel Orientation="Horizontal" Height="50">
-                            <TextBlock Text="{Binding RIncorrecta2}" Width="200" Style="{StaticResource EstiloNorteTBK}" />
-                            <TextBox Text="{Binding RIncorrecta2Valor}" Width="530" Style="{StaticResource EstiloNorteTBX}"/>
-                        </StackPanel>
-
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
 
     </Grid>
 </Window>

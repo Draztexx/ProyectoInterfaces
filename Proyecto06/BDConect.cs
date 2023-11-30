@@ -80,6 +80,7 @@ namespace Proyecto05
         public void Insert(String x)
         {
             MySqlCommand cmd = new MySqlCommand(x, coneccion);
+           
             cmd.ExecuteNonQuery();
 
 
