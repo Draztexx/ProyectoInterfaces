@@ -22,7 +22,7 @@ namespace Proyecto05
     public partial class MainWindow : Window
     {
 
-        
+        int IDUsuario;
 
         public MainWindow()
         {
@@ -50,7 +50,11 @@ namespace Proyecto05
                     }
                     else
                     {
+
                         MessageBox.Show("Ha iniciado sesion como un misero usuario", "Información");
+                        UsuarioMenu UM= new UsuarioMenu(this,result);
+                        this.Hide();
+                        UM.Show();
                     }
                 }
                 else

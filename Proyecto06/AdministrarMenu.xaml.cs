@@ -30,8 +30,9 @@ namespace Proyecto05
         private void Alumno_Click(object sender, RoutedEventArgs e)
         {
             Administrar ad = new Administrar(this);
-            ad.Show();
             this.Hide();
+            ad.Show();
+            
         }
 
         private void Temas_Click(object sender, RoutedEventArgs e)

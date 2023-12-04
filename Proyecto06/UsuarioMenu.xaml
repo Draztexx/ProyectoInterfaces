@@ -7,16 +7,30 @@
         mc:Ignorable="d"
         Title="UsuarioMenu" Height="400" Width="600">
     <Grid>
-        <StackPanel Orientation="Horizontal" Margin="0,41,0,297" HorizontalAlignment="Center">
-            <TextBlock Text="Bienvenido Usuario" Height="auto" VerticalAlignment="Center" FontSize="30"/>
+        <StackPanel Orientation="Horizontal" Margin="0,24,0,297" HorizontalAlignment="Center">
+            <TextBlock Text="Bienvenido Usuario" Height="47" FontSize="30"/>
         </StackPanel>
 
-        <StackPanel Margin="80,119,80,36" >
+        <StackPanel Margin="80,102,80,36" >
             <StackPanel Orientation="Horizontal" Height="108" Width="123">
                 <StackPanel.Background>
                     <ImageBrush ImageSource="/Usuario.png" Stretch="UniformToFill" TileMode="None"/>
                 </StackPanel.Background>
+                
             </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="50" >
+                <TextBlock x:Name="Nombre" Text="" FontSize="27" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="20" >
+                <TextBlock x:Name="Puntuacion" Text="" FontSize="12" VerticalAlignment="Center"/>
+                
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="50" >
+                <Button x:Name="BTTemas" Content=" TEMAS "  Background="LightCoral" FontSize="20" Click="BTTemas_Click" Height="40"/>
+                <Separator Width="10"/>
+                <Button x:Name="BTCContraseña" Content=" Cambiar Cotraseña "  Background="LightCoral" FontSize="20" Click="BTCContraseña_Click" Height="40"/>
+            </StackPanel>
+
         </StackPanel>
 
     </Grid>
