@@ -52,23 +52,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alumno\\.nuget\\packages\\": {},
+    "C:\\Users\\adnet\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\ProyectoInterfaces\\Proyecto06\\Proyecto05.csproj",
+      "projectUniqueName": "D:\\Proyectos\\ProyectoInterfaces\\Proyecto06\\Proyecto05.csproj",
       "projectName": "Proyecto05",
-      "projectPath": "C:\\Users\\Alumno\\Desktop\\ProyectoInterfaces\\Proyecto06\\Proyecto05.csproj",
-      "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alumno\\Desktop\\ProyectoInterfaces\\Proyecto06\\obj\\",
+      "projectPath": "D:\\Proyectos\\ProyectoInterfaces\\Proyecto06\\Proyecto05.csproj",
+      "packagesPath": "C:\\Users\\adnet\\.nuget\\packages\\",
+      "outputPath": "D:\\Proyectos\\ProyectoInterfaces\\Proyecto06\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adnet\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

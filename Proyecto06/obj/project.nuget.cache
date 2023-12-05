@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zAmF46YCGQJcFrUNGdJdN0GNbFtpIQeCAbJU7kl06NHRfYMNFHaM9iVa79v2K9lsZLZdNX/xJkbbV8td+v6m3Q==",
+  "dgSpecHash": "pM662nSUn+NfLUh+TcjHb9VmBWNgkERyNkvU3fS0XunSWyIRhkCGjQUlXKZIrl9FDuywAgenTtVEfaDSs38zCw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alumno\\Desktop\\ProyectoInterfaces\\Proyecto06\\Proyecto05.csproj",
+  "projectFilePath": "D:\\Proyectos\\ProyectoInterfaces\\Proyecto06\\Proyecto05.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Alumno\\.nuget\\packages\\mysqlconnector\\2.2.7\\mysqlconnector.2.2.7.nupkg.sha512"
+    "C:\\Users\\adnet\\.nuget\\packages\\mysqlconnector\\2.2.7\\mysqlconnector.2.2.7.nupkg.sha512"
   ],
   "logs": []
 }
