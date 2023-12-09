@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto05"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="UsuarioMenu" Height="400" Width="600">
     <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FFD4E4ED" Offset="0.603"/>
+            </RadialGradientBrush>
+        </Grid.Background>
         <StackPanel Orientation="Horizontal" Margin="0,24,0,297" HorizontalAlignment="Center">
             <TextBlock Text="Bienvenido Usuario" Height="47" FontSize="30"/>
         </StackPanel>
@@ -16,14 +22,14 @@
                 <StackPanel.Background>
                     <ImageBrush ImageSource="/Usuario.png" Stretch="UniformToFill" TileMode="None"/>
                 </StackPanel.Background>
-                
+
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="50" >
                 <TextBlock x:Name="Nombre" Text="" FontSize="27" VerticalAlignment="Center"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="20" >
                 <TextBlock x:Name="Puntuacion" Text="" FontSize="12" VerticalAlignment="Center"/>
-                
+
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="50" >
                 <Button x:Name="BTTemas" Content=" TEMAS "  Background="LightCoral" FontSize="20" Click="BTTemas_Click" Height="40"/>

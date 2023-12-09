@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto05"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="Fallo" Height="450" Width="800">
     <Grid>
-        
+        <Label x:Name="Ltitulo" Margin="10,10,10,344" Content="ejemplo"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" FontWeight="Bold" Foreground="#FFF90303"/>
+        <Label  Margin="20,95,19,273" Content="Las Preguntas Incorrectas son las Siguientes:"   VerticalContentAlignment="Center" FontSize="25" FontWeight="Bold" Foreground="White" Background="Red" />
+        <ListBox x:Name="Listafallos" Margin="20,166,20,76" FontSize="20"/>
+        <Button x:Name="Accion" Click="Accion_Click" Margin="243,358,215,10" Content=" "  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" FontWeight="Bold" Foreground="White" Background="LightCoral"/>
     </Grid>
 </Window>

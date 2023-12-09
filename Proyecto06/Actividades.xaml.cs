@@ -11,6 +11,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Proyecto05
@@ -24,8 +25,10 @@ namespace Proyecto05
         int cont = 0;
         int act = 0;
         Boolean seguir = true;
-        public Actividades( DataTable x)
+        int idUsuario;
+        public Actividades( DataTable x,int y)
         {
+            idUsuario = y;
             InitializeComponent();
             todo = x;
             act = todo.Rows.Count;
@@ -39,7 +42,10 @@ namespace Proyecto05
                 {
                     String contenido=todo.Rows[cont]["pregunta"].ToString();
                     Contenido.Text = "Actividad :"+ (cont + 1) +" "+contenido;
-                    
+                    link.NavigateUri = new Uri(todo.Rows[cont]["respuestav"].ToString());
+                    link.Inlines.Clear();
+                    link.Inlines.Add(new Run("VISITA ESTE ENLACE ANTES DE REALIZAR LA ACTIVIDAD"));
+
                 }
                 else
                 {
@@ -69,7 +75,7 @@ namespace Proyecto05
             }
             else
             {
-                Felicidades felicidades = new Felicidades(act,todo);
+                Felicidades felicidades = new Felicidades(act,todo,idUsuario);
                 felicidades.Show(); this.Close();
             }
             
@@ -77,8 +83,28 @@ namespace Proyecto05
 
         private void BTEnviar_Click(object sender, RoutedEventArgs e)
         {
-            
+            string enlace = "https://www.salesianospizarrales.com/"; 
+            try
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir el enlace: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
 
+        }
+
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo("cmd", $"/c start {e.Uri.AbsoluteUri}") { CreateNoWindow = true }); e.Handled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al abrir el enlace: " + ex.Message);
+            }
         }
     }
 }

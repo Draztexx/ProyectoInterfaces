@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="Administrar" Height="600" Width="1000">
 
 
@@ -18,8 +19,8 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
-                                <Button Content="Modificar" Width="75" Click="btnModificar_Click"/>
-                                <Button Content="Eliminar" Width="75" Click="btnEliminar_Click" Tag="{Binding}"/>
+                                <Button Content="Modificar" Width="75" Click="btnModificar_Click" />
+                                <Button Content="Eliminar" Width="75" Click="btnEliminar_Click" />
                             </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>

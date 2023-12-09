@@ -115,7 +115,33 @@ namespace Proyecto05
 
         private void Button_Click_Modificar(object sender, RoutedEventArgs e)
         {
+            DataRowView selectedRow = (DataRowView)dataGrid.SelectedItem;
 
+
+            if (selectedRow != null)
+            {
+
+
+
+                string nombre= selectedRow["nombretema"].ToString();
+                string desc = selectedRow["descripcion"].ToString();
+                int tiempo = int.Parse(selectedRow["tiempo"].ToString());
+
+
+
+                try
+                {
+
+                    String consulta2 = "UPDATE tema SET  descripcion='"+desc+"',tiempo ="+tiempo+"  WHERE nombretema='" + nombre + "' ";
+                    BD.Insert(consulta2);
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al modificar el usuario: " + ex.Message);
+                }
+            }
         }
 
         private void AdministrarTemas_Cerrar(object sender, System.ComponentModel.CancelEventArgs e)

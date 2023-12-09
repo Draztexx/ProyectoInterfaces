@@ -30,13 +30,13 @@ namespace Proyecto05
             result = y;
             BD = new BDConect();
             Loaded += MainForm_Load;
-            
             Closing += UsuarioTemas_Cerrar;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             CargarDatos();
+            dataGrid.LoadingRow += dataGrid_LoadingRow;
         }
 
 
@@ -55,8 +55,8 @@ namespace Proyecto05
 
                 for (int i = dt.Rows.Count - 1; i >= 0; i--)
                 {
-                    string consulta2 = "SELECT* FROM usuario_tema WHERE idusuario= " +(result.Rows[0].Field<int>("id"))+" AND idtema="+ (dt.Rows[i].Field<int>("id"))+"";
-                    DataTable dt2 = BD.Select(consulta);
+                    string consulta2 = "SELECT * FROM usuario_tema WHERE idusuario=" +(int.Parse(result.Rows[0]["id"].ToString()))+" AND idtema="+ (int.Parse(dt.Rows[i]["id"].ToString()))+"";
+                    DataTable dt2 = BD.Select(consulta2);
                     BD.Close();
 
                     if (string.IsNullOrWhiteSpace(dt.Rows[i]["nombretema"].ToString()) &&
@@ -69,17 +69,32 @@ namespace Proyecto05
                     {
                         if (dt2.Rows.Count > 0)
                         {
+                            
                             dt.Rows[i]["realizado"] = "Realizado";
                         }
                         else
                         {
                             dt.Rows[i]["realizado"] = "Sin Realizar";
+
+                           
+
                         }
                     }
                 }
 
                 dataGrid.ItemsSource = dt.DefaultView;
 
+                foreach (DataRow row in dt.Rows)
+                {
+                    if (row["realizado"].ToString() == "Realizado")
+                    {
+                        var cellContent = dataGrid.Columns[dataGrid.Columns.Count - 1].GetCellContent(dataGrid.Items[dt.Rows.IndexOf(row)]);
+                        if (cellContent is FrameworkElement element && element is Button)
+                        {
+                            ((Button)element).IsEnabled = false;
+                        }
+                    }
+                }
 
 
 
@@ -110,7 +125,7 @@ namespace Proyecto05
                     string consulta = "SELECT * FROM tema WHERE nombretema LIKE '" + nombretema + "'";
                     DataTable dt = BD.Select(consulta);
 
-                    Tema tema = new Tema(dt);
+                    Tema tema = new Tema(dt, int.Parse(result.Rows[0]["id"].ToString()));
                 
                     tema.Show();this.Close();
 
@@ -128,6 +143,23 @@ namespace Proyecto05
 
         }
 
-        
+        private void dataGrid_LoadingRow(object sender, DataGridRowEventArgs e)
+        {
+            DataRowView rowView = e.Row.Item as DataRowView;
+
+            if (rowView != null)
+            {
+                string realizado = rowView["realizado"].ToString();
+
+                if (realizado == "Realizado")
+                {
+                    e.Row.IsEnabled = false;
+                }
+            }
+        }
+
+
+
+
     }
 }

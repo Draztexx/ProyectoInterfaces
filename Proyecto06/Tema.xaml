@@ -5,16 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto05"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="Tema" Height="1000" Width="1000">
-    <Grid>
-        <StackPanel Margin="40,15,40,666" >
-            <StackPanel Margin="10,10,10,10" Height="50" Orientation="Horizontal"   >
-                <TextBlock Text="TEMA:" Width="130"  FontSize="20"  VerticalAlignment="Center" />
-                <TextBlock x:Name="TBtitulo" Text="titulo"  Width="686"  FontSize="20"  VerticalAlignment="Center" />
+    <Grid Background="#FFC7DBFB">
+        <StackPanel Margin="40,15,40,666" Background="#FFFFBABA" >
+            <StackPanel Margin="10,10,10,10" Height="50" Orientation="Horizontal" Background="#FFCCCCCC"   >
+                <TextBlock Text="TEMA:" Width="130"  FontSize="24"  VerticalAlignment="Center" />
+                <TextBlock x:Name="TBtitulo" Text="titulo"  Width="686"  FontSize="24"  VerticalAlignment="Center" />
             </StackPanel>
-            <StackPanel  Margin="10,10,10,10" Height="109" Orientation="Horizontal"   >
-                <TextBlock Text="CONTENIDO:" Width="130"  FontSize="20"  VerticalAlignment="Center" />
-                <TextBlock x:Name="Contenido" Text="titulo"  Width="686"  FontSize="20"  VerticalAlignment="Center" Height="76" TextWrapping="Wrap" MaxWidth="686"/>
+            <StackPanel  Margin="10,10,10,10" Height="109" Orientation="Horizontal" Background="#FFCCCCCC"   >
+                <TextBlock Text="CONTENIDO:" Width="130"  FontSize="24"  VerticalAlignment="Center" />
+                <TextBlock x:Name="Contenido" Text="titulo"  Width="686"  FontSize="24"  VerticalAlignment="Center" Height="76" TextWrapping="Wrap" MaxWidth="686"/>
             </StackPanel>
             <StackPanel  Margin="10,10,10,10" Height="60" Orientation="Horizontal" HorizontalAlignment="Center"  >
                 <TextBlock Width="220" Text="TIEMPO DE LECTURA"  FontSize="20" VerticalAlignment="Center" TextAlignment="Center" />
@@ -25,7 +26,7 @@
             </StackPanel>
 
         </StackPanel>
-        <StackPanel Margin="40,352,40,147" >
+        <StackPanel Margin="40,352,40,147" Background="#FFF9CDCD" >
             <WebBrowser x:Name="MiNavegadorWeb" Source="" Height="423" />
         </StackPanel>
         <StackPanel Margin="0,863,0,0" Orientation="Horizontal" HorizontalAlignment="Center" >

@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace Proyecto05
 {
@@ -28,10 +29,12 @@ namespace Proyecto05
         int pre = 0;
         Boolean seguir = true;
         string[] lista;
-        ArrayList preguntas = new ArrayList();
+        List<string> preguntas = new List<string>();
         int puntos=0;
-        public Preguntas(DataTable x)
+        int idUsuarios;
+        public Preguntas(DataTable x,int y)
         {
+            idUsuarios = y;
             todo = x;
             pre= todo.Rows.Count;
             lista = new string[3];
@@ -46,7 +49,7 @@ namespace Proyecto05
                 if (todo.Rows.Count > 0)
                 {
 
-                    Pregunta.Content = todo.Rows[cont]["pregunta"].ToString();
+                    Pregunta.Text = todo.Rows[cont]["pregunta"].ToString();
                     lista[0] = todo.Rows[cont]["respuestav"].ToString();
                     lista[1] = todo.Rows[cont]["respuesta2"].ToString();
                     lista[2] = todo.Rows[cont]["respuesta3"].ToString();
@@ -63,11 +66,7 @@ namespace Proyecto05
 
 
                 }
-                else
-                {
-                    //error
-
-                }
+                
 
             }
             catch (Exception ex)
@@ -75,7 +74,7 @@ namespace Proyecto05
                 MessageBox.Show("Error al cargar los datos: " + ex.Message);
             }
 
-            if (cont == (pre - 1))
+            if (cont == (pre-1))
             {
                 seguir = false;
             }
@@ -104,7 +103,7 @@ namespace Proyecto05
         private void Siguiente_Click(object sender, RoutedEventArgs e)
         {
             
-            if (seguir && check())
+            if (check() )
             {
                 
                 if(respuesta()== todo.Rows[cont]["respuestav"].ToString())
@@ -114,32 +113,48 @@ namespace Proyecto05
                 }
                 else
                 {
+                    preguntas.Add(todo.Rows[cont]["pregunta"].ToString());
                     cont++;
-                    preguntas.Add(respuesta());
+                    
                 }
-                CargarDatos();
-            }
-            else
-            {
-                
+
+                if (seguir == false)
+                {
+                    
+                    Fallo fallo = new Fallo(puntos, preguntas,todo,idUsuarios);
+                    fallo.Show(); this.Close();
+
+                }
+                else
+                {
+                    CargarDatos();
+                }
             }
 
-        }
+                
+
+         }
+            
+                
+                
+            
+
+        
 
         private String respuesta()
         {
             String result="";
             if (PRE1.IsChecked.HasValue && PRE1.IsChecked.Value)
             {
-                result = PRE1.Content.ToString();
+                return result = PRE1.Content.ToString();
             }
-            if (PRE2.IsChecked.HasValue && PRE1.IsChecked.Value)
+            if (PRE2.IsChecked.HasValue && PRE2.IsChecked.Value)
             {
-                result = PRE2.Content.ToString();
+                return result = PRE2.Content.ToString();
             }
-            if (PRE3.IsChecked.HasValue && PRE1.IsChecked.Value)
+            if (PRE3.IsChecked.HasValue && PRE3.IsChecked.Value)
             {
-                result = PRE3.Content.ToString();
+                return result = PRE3.Content.ToString();
             }
 
             return result;

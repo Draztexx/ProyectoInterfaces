@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto05"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="AgregarTema" Height="1000" Width="900">
     <Window.Resources>
         <Style x:Key="EstiloNorteTBK" TargetType="TextBlock">
@@ -22,9 +23,11 @@
             <Setter Property="FontFamily"   Value="Verdana"/>
             <Setter Property="FontSize" Value="18"/>
         </Style>
+
+        
     </Window.Resources>
     <Grid Margin="0,0,0,-581">
-        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,0,0,581">
+        <ScrollViewer x:Name="todo" VerticalScrollBarVisibility="Auto" Margin="0,0,0,581">
 
             <StackPanel Margin="80,40,80,36" >
 

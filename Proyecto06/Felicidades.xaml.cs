@@ -23,9 +23,11 @@ namespace Proyecto05
         int cont;
         DataTable todo;
         BDConect BD;
+        int idUsuario;
 
-        public Felicidades(int x,DataTable y)
+        public Felicidades(int x,DataTable y,int z)
         {
+            idUsuario = z;
             BD = new BDConect();
             cont = x;
             todo= y;
@@ -43,7 +45,7 @@ namespace Proyecto05
 
             string consulta = "SELECT * FROM actividades WHERE tema=" +num+ " AND tipo LIKE 'P'";
             DataTable dt = BD.Select(consulta);
-            Preguntas preguntas = new Preguntas(dt);
+            Preguntas preguntas = new Preguntas(dt,idUsuario);
             preguntas.Show(); this.Close();
         }
     }

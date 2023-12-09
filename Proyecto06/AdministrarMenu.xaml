@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto05"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="AdministrarMenu" Height="400" Width="600">
     <Grid>
         <StackPanel Margin="93,106,340,85">

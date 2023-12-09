@@ -142,3 +142,8 @@ D:\Proyectos\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Felicidades.
 D:\Proyectos\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Felicidades.baml
 D:\Proyectos\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Preguntas.g.cs
 D:\Proyectos\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Preguntas.baml
+D:\Proyectos\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Fallo.g.cs
+D:\Proyectos\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Fallo.baml
+D:\Proyectos\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Ranquing.g.cs
+D:\Proyectos\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\Ranquing.baml
+D:\Proyectos\ProyectoInterfaces\Proyecto06\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs

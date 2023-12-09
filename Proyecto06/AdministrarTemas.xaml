@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto05"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="AdministrarTemas" Height="600" Width="1000">
     <Grid>
         <StackPanel Margin="40,15,40,483" Orientation="Horizontal">

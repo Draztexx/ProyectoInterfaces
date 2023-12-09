@@ -64,24 +64,74 @@ namespace Proyecto05
 
         private void Agregar_Click(object sender, RoutedEventArgs e)
         {
-            idtema = SqlTema(titulo.Text, descripcion.Text, documento.Text, duracion.Text);
-            if (idtema!=0)
+            if (TodosLosTextBoxRellenados(this) && url())
             {
-                
-                Sqlpreguntas(idtema, P1.Text, RC1.Text, RI11.Text, RI12.Text);
-                Sqlpreguntas(idtema, P2.Text, RC2.Text, RI21.Text, RI22.Text);
-                Sqlpreguntas(idtema, P3.Text, RC3.Text, RI31.Text, RI32.Text);
-                Sqlpreguntas(idtema, P4.Text, RC4.Text, RI41.Text, RI42.Text);
-                MessageBox.Show("Se ha agregado el tema correctamente junto con sus respectivas preguntas", "Información");
 
+                idtema = SqlTema(titulo.Text, descripcion.Text, documento.Text, duracion.Text);
+                if (idtema != 0)
+                {
+
+                    Sqlpreguntas(idtema, P1.Text, RC1.Text, RI11.Text, RI12.Text);
+                    Sqlpreguntas(idtema, P2.Text, RC2.Text, RI21.Text, RI22.Text);
+                    Sqlpreguntas(idtema, P3.Text, RC3.Text, RI31.Text, RI32.Text);
+                    Sqlpreguntas(idtema, P4.Text, RC4.Text, RI41.Text, RI42.Text);
+                    MessageBox.Show("Se ha agregado el tema correctamente junto con sus respectivas preguntas", "Información");
+
+                }
+                else
+                {
+                    MessageBox.Show("Ha ocurrido un error al insertar todo en la base de datos", "Información");
+
+                }
             }
             else
             {
-                MessageBox.Show("Ha ocurrido un error al insertar todo en la base de datos", "Información");
+                MessageBox.Show("Por favor, rellena todos los campos, correctamente en el documento del tema se introduce una URL valida");
+            }
 
             }
 
+        private bool TodosLosTextBoxRellenados(DependencyObject parent)
+        {
+            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(parent); i++)
+            {
+                var child = VisualTreeHelper.GetChild(parent, i);
+
+                if (child is TextBox textBox)
+                {
+                    if (string.IsNullOrWhiteSpace(textBox.Text))
+                    {
+                        
+                        return false;
+                    }
+                }
+
+            
+                if (!TodosLosTextBoxRellenados(child))
+                {
+                    return false;
+                }
+            }
+
+            
+            return true;
         }
+
+
+        private Boolean url()
+        {
+            String url = documento.Text;
+            if (((url.Contains("www.")) || (url.Contains("https://"))) && ((url.Contains(".org")) || (url.Contains(".com")) || (url.Contains(".es")))){
+                return true;
+            }
+           
+          
+
+            return false;
+        }
+
+
+
     }
 
     

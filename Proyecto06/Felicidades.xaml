@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto05"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="Felicidades" Height="450" Width="800">
     <Grid>
         <Label Margin="0,0,48,335" Content="ACTIVIDADES"  HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="50" FontWeight="Bold" Foreground="#FFF90303"/>

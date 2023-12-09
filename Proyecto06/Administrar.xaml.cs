@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 
 namespace Proyecto05
@@ -24,8 +25,10 @@ namespace Proyecto05
     public partial class Administrar : Window
     {
         AdministrarMenu ADref;
-
+        
         BDConect BD;
+        int id;
+        
 
         public Administrar(AdministrarMenu x)
         {
@@ -50,7 +53,7 @@ namespace Proyecto05
         {
             try
             {
-                string consulta = "SELECT username,email,puntos FROM users WHERE rol LIKE 'user'";
+                string consulta = "SELECT * FROM users WHERE rol LIKE 'user'";
 
                 DataTable dt = BD.Select(consulta);
 
@@ -79,7 +82,33 @@ namespace Proyecto05
 
         private void btnModificar_Click(object sender, RoutedEventArgs e)
         {
+            DataRowView selectedRow = (DataRowView)dataGrid1.SelectedItem;
 
+
+            if (selectedRow != null)
+            {
+                
+
+                
+                string username= selectedRow["username"].ToString();
+                string email = selectedRow["email"].ToString();
+                int puntos = int.Parse(selectedRow["puntos"].ToString());
+
+              
+
+                try
+                {
+
+                    String consulta2 = "UPDATE users SET  username='"+username+"',puntos ="+puntos+"  WHERE email='"+email+"' ";
+                    BD.Insert(consulta2);
+
+                            
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al modificar el usuario: " + ex.Message);
+                }
+            }
         }
 
         private void btnEliminar_Click(object sender, RoutedEventArgs e)

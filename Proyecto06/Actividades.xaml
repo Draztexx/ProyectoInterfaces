@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto05"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="Actividades" Height="800" Width="1000">
+   
     <Grid>
         <Image Margin="34,34,368,634"  Stretch="Fill" RenderTransformOrigin="0.494,0.28" Source="/salesianos.png"/>
         <Label Margin="34,155,368,528" Content="ACTIVIDADES"  HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="50" FontWeight="Bold" Foreground="#FFF90303"/>
@@ -14,10 +16,14 @@
                 <TextBlock x:Name="Contenido"   Width="908"  FontSize="25"  TextWrapping="Wrap" MaxWidth="900"/>
                 
             </StackPanel>
-            <StackPanel  Margin="10,10,10,10" Height="80" Orientation="Horizontal"   >
-                <TextBlock x:Name="Enlace" Text="VISITA ESTE ENLACE ANTES DE REALIZAR LA ACTIVIDAD" TextAlignment="Center" Width="908"  FontSize="30" VerticalAlignment="Center" Foreground="#FF004AFF" FontWeight="Bold"  />
-
+            <StackPanel Margin="10,10,10,10" Height="80" Orientation="Horizontal">
+                <TextBlock TextAlignment="Center" Width="908" FontSize="30" VerticalAlignment="Center" Foreground="#FF004AFF" FontWeight="Bold">
+                    <Hyperlink x:Name="link"  RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="VISITA ESTE ENLACE ANTES DE REALIZAR LA ACTIVIDAD" />
+                    </Hyperlink>
+                </TextBlock>        
             </StackPanel>
+
             <StackPanel Orientation="Horizontal" Height="165" HorizontalAlignment="Center" >
                 <TextBlock Text="Envianos tu actividad aqui: " TextAlignment="Center"  FontSize="30" VerticalAlignment="Center" FontWeight="Bold"  />
                 <Button x:Name="BTEnviar" Content="ENVIAR"   Background="LightCoral" FontSize="30" Click="BTEnviar_Click"  Height="60"/>

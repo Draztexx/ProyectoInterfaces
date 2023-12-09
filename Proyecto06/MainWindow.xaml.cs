@@ -43,7 +43,7 @@ namespace Proyecto05
                 {
                     if (result.Rows[0]["rol"].ToString() == "admin")
                     {
-                        MessageBox.Show("Ha iniciado sesion como admin", "Información");
+                    
                         AdministrarMenu ad = new AdministrarMenu(this);
                        this.Hide();
                         ad.Show();
@@ -51,7 +51,7 @@ namespace Proyecto05
                     else
                     {
 
-                        MessageBox.Show("Ha iniciado sesion como un misero usuario", "Información");
+                        
                         UsuarioMenu UM= new UsuarioMenu(this,result);
                         this.Hide();
                         UM.Show();
@@ -100,26 +100,3 @@ namespace Proyecto05
 }
 
 
-/*
-string consulta = "SELECT * FROM tu_tabla";
-DataTable resultado = bdConexion.Select(consulta);
-
-// Verificar si hay datos en el DataTable
-if (resultado.Rows.Count > 0)
-{
-    // El DataTable tiene al menos un registro
-    Console.WriteLine("Hay datos en el DataTable.");
-    
-    // Puedes acceder a los datos usando un bucle por cada fila
-    foreach (DataRow fila in resultado.Rows)
-    {
-        // Acceder a las columnas por el nombre de la columna o el índice
-        Console.WriteLine("Columna1: " + fila["nombre_columna1"] + ", Columna2: " + fila["nombre_columna2"]);
-    }
-}
-else
-{
-    // El DataTable está vacío, no hay registros
-    Console.WriteLine("El DataTable está vacío, no hay registros.");
-}
- */
