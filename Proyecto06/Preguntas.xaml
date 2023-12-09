@@ -1,0 +1,20 @@
+﻿<Window x:Class="Proyecto05.Preguntas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto05"
+        mc:Ignorable="d"
+        Title="Preguntas" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="24,10,24,34" >
+            <Label Content="Preguntas:" Height="80" FontSize="38" VerticalContentAlignment="Center"/>
+            <Label x:Name="Pregunta"  Content="Selecciona una respuesta:" Height="70" VerticalContentAlignment="Center" FontSize="30"/>
+
+            <RadioButton x:Name="PRE1"  Content="Respuesta 1" Height="40" VerticalContentAlignment="Center" GroupName="GroupRespuestas"/>
+            <RadioButton x:Name="PRE2" Content="Respuesta 2" Height="40" VerticalContentAlignment="Center" GroupName="GroupRespuestas"/>
+            <RadioButton x:Name="PRE3" Content="Respuesta 3" Height="40" VerticalContentAlignment="Center" GroupName="GroupRespuestas"/>
+            <Button x:Name="Siguiente" Click="Siguiente_Click" FontSize="35" Content="Siguiente" Margin="10,30,10,10" Width="150"  Foreground="White" Background="LightCoral"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -15,6 +15,7 @@
     <None Remove="fondo.jpg" />
     <None Remove="logo.jpg" />
     <None Remove="mail.jpg" />
+    <None Remove="salesianos.png" />
     <None Remove="user.jpg" />
     <None Remove="Usuario.png" />
   </ItemGroup>
@@ -30,6 +31,7 @@
     <Resource Include="fondo.jpg" />
     <Resource Include="logo.jpg" />
     <Resource Include="mail.jpg" />
+    <Resource Include="salesianos.png" />
     <Resource Include="user.jpg" />
     <Resource Include="Usuario.png" />
   </ItemGroup>

@@ -101,7 +101,7 @@ namespace Proyecto05 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Proyecto05;V1.0.0.0;component/registro.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Proyecto05;component/registro.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Registro.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

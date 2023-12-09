@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Proyectos\ProyectoInterfaces\Proyecto06\App.xaml
-91765082602
+13-506283103
 
-1438687915
+18-1752505553
 195-1379143094
-Administrar.xaml;AdministrarMenu.xaml;AdministrarTemas.xaml;AgregarTema.xaml;MainWindow.xaml;Registro.xaml;Tema.xaml;UsuarioMenu.xaml;UsuarioTemas.xaml;
+Actividades.xaml;Administrar.xaml;AdministrarMenu.xaml;AdministrarTemas.xaml;AgregarTema.xaml;Fallo.xaml;Felicidades.xaml;MainWindow.xaml;Preguntas.xaml;Registro.xaml;Tema.xaml;UsuarioMenu.xaml;UsuarioTemas.xaml;
 
 True
 

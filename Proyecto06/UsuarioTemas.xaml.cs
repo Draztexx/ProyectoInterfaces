@@ -110,7 +110,7 @@ namespace Proyecto05
                     string consulta = "SELECT * FROM tema WHERE nombretema LIKE '" + nombretema + "'";
                     DataTable dt = BD.Select(consulta);
 
-                    Tema tema = new Tema( result);
+                    Tema tema = new Tema(dt);
                 
                     tema.Show();this.Close();
 

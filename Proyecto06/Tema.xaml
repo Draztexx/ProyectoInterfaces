@@ -7,6 +7,32 @@
         mc:Ignorable="d"
         Title="Tema" Height="1000" Width="1000">
     <Grid>
-        
+        <StackPanel Margin="40,15,40,666" >
+            <StackPanel Margin="10,10,10,10" Height="50" Orientation="Horizontal"   >
+                <TextBlock Text="TEMA:" Width="130"  FontSize="20"  VerticalAlignment="Center" />
+                <TextBlock x:Name="TBtitulo" Text="titulo"  Width="686"  FontSize="20"  VerticalAlignment="Center" />
+            </StackPanel>
+            <StackPanel  Margin="10,10,10,10" Height="109" Orientation="Horizontal"   >
+                <TextBlock Text="CONTENIDO:" Width="130"  FontSize="20"  VerticalAlignment="Center" />
+                <TextBlock x:Name="Contenido" Text="titulo"  Width="686"  FontSize="20"  VerticalAlignment="Center" Height="76" TextWrapping="Wrap" MaxWidth="686"/>
+            </StackPanel>
+            <StackPanel  Margin="10,10,10,10" Height="60" Orientation="Horizontal" HorizontalAlignment="Center"  >
+                <TextBlock Width="220" Text="TIEMPO DE LECTURA"  FontSize="20" VerticalAlignment="Center" TextAlignment="Center" />
+                <TextBlock Width="50" Text="60" x:Name="MIN" FontSize="30" VerticalAlignment="Center" TextAlignment="Center" />
+                <TextBlock Width="22" Text=" : " FontSize="30" VerticalAlignment="Center" TextAlignment="Center" />
+                <TextBlock Width="50" Text="60" x:Name="SEC" FontSize="30" VerticalAlignment="Center" TextAlignment="Center" />
+
+            </StackPanel>
+
+        </StackPanel>
+        <StackPanel Margin="40,352,40,147" >
+            <WebBrowser x:Name="MiNavegadorWeb" Source="" Height="423" />
+        </StackPanel>
+        <StackPanel Margin="0,863,0,0" Orientation="Horizontal" HorizontalAlignment="Center" >
+            <Button x:Name="BTVolver" Content=" VOLVER "  Width="150" Background="LightCoral" FontSize="30" Click="BTVolver_Click"  Height="60"/>
+            <Separator Width="10"/>
+            <Button x:Name="BTActividades" Content=" ACTIVIDADES " Width="250" Background="LightCoral" FontSize="30" Click="BTActividades_Click"  Height="60"/>
+        </StackPanel>
+
     </Grid>
 </Window>

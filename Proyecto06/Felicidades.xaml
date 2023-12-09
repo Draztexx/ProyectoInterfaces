@@ -1,0 +1,15 @@
+﻿<Window x:Class="Proyecto05.Felicidades"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto05"
+        mc:Ignorable="d"
+        Title="Felicidades" Height="450" Width="800">
+    <Grid>
+        <Label Margin="0,0,48,335" Content="ACTIVIDADES"  HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="50" FontWeight="Bold" Foreground="#FFF90303"/>
+        <Label Margin="107,115,107,234" Content=" ¡Actividades completas!"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" FontWeight="Bold" Foreground="#FFF90303"/>
+        <Label x:Name="LB01" Margin="15,205,31,144" Content=""  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" FontWeight="Bold" Foreground="#FFF90303"/>
+        <Button x:Name="Preguntas" Click="Preguntas_Click" Margin="209,317,225,32" Content=" IR A PREGUNTAS"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="35" FontWeight="Bold" Foreground="White" Background="LightCoral"/>
+    </Grid>
+</Window>

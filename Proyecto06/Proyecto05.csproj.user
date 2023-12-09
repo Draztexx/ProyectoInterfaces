@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Actividades.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Administrar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -17,6 +20,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="AgregarTema.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fallo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Felicidades.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Preguntas.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Registro.xaml.cs">
@@ -33,6 +45,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Actividades.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Administrar.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -45,7 +60,16 @@
     <Page Update="AgregarTema.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Fallo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Felicidades.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Preguntas.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Registro.xaml">

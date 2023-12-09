@@ -60,7 +60,7 @@ namespace Proyecto05 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Proyecto05;V1.0.0.0;component/administrar.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Proyecto05;component/administrar.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Administrar.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
